@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee World</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar  navbar-expand-lg sticky-top"
+        style="color: white; background-color: #67461b;font-family: cursive; border-bottom: 1px solid rgba(255, 255, 255, 0.269);">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="images/nav.webp" height="100%" width="50px" style="border-radius: 30px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navShadow" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 ms-5 ms-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white; " aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#Menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#Products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#Review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#Blog">Blog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <i class="fa fa-shopping-cart " style="font-weight: bolder; font-size: 2em;" aria-hidden="true"></i>
+                    <i class="fa fa-search ms-4" onclick="openSearch()" id="iFrameSearch"
+                        style="height: 8px; width: 150px; font-weight: bolder; font-size: 2em;" aria-hidden="true"></i>
+                    <div id="searchFormID">
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 bg-white" id="SearchInNavbar" type="search"
+                                placeholder="Search" aria-label="Search"></br>
+                        </form>
+                    </div>
+
+                </ul>
+
+            </div>
+    </nav>
+    <!-- nav end -->
+    <!-- cover image start -->
+
+    <div class="cvrImg">
+        <div class="center" style=" background: transparent;">
+            <h2 style="font-size: 3.5em; font-weight: bolder; font-family: cursive;">The Perfect Blend Of Happiness :)
+            </h2>
+            <p style="font-size: 1.6em; font-family: cursive;">Have freshness in every sip</p>
+        </div>
+
+    </div>
+    <!-- cover end -->
+
+    <div class="finalContainer">
+        <div class="siderbar1"></div>
+        <main class="main">
+
+            <!-- about start  -->
+            <div class="about" id="About" style="background-color: black;">
+                <br><br>
+                <h1 class="pt-5 mt-5 mb-5" style="text-align: center; color:  #67461b !important;"> <b
+                        style="border-left:18px solid #67461b; padding: 16px;">ABOUT US</b></h1>
+
+                <div class="aboutMain">
+                    <div class="aboutPIC">
+                        <img src="images/about.jpg" height="280px " width="300px" style="border-radius: 9px;">
+                    </div>
+
+                    <div class="aboutText p-3">
+
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nemo temporibus repellat
+                            aliquam, nam eligendi accusamus?</p>
+                        <p>Lorem ipsum dolo Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Optio libero eius iure in nisi corrupti nemo! placeat molestiae molestias iste accusamus.
+                        </p>
+                        <br><br> <button class="Btn">Learn More</button>
+
+                    </div>
+                </div> <br><br><br>
+                <!-- about end -->
+                <!-- menu start  -->
+                <div class="menu" id="Menu" style="background-color: black;">
+                    <h1 class="pt-5 mb-5 mt-5" style="text-align: center; "> <b
+                            style="border-left:18px solid #67461b; padding: 16px;">MENU</b></h1>
+
+                    <div class="menuMain">
+                        <div class="line1">
+                            <span class="card1">
+                                <div class="menuImgDIV"><img src="images/menu1.jpg" class="menuImg" height="70px"
+                                        width="70px" alt=""></div>
+                                <br>
+                                <h3>Frapachino</h3>
+                                <p>$10.99</p>
+                                <button class="btn btnMENU">Add To Cart</button>
+                            </span>
+                            <!-- 2 -->
+                            <span class="card1">
+                                <div class="menuImgDIV"><img src="images/menu2.jpg" class="menuImg" height="70px"
+                                        width="70px" alt=""></div>
+                                <br>
+                                <h3>Frapachino</h3>
+                                <p>$10.99</p>
+                                <button class="btn btnMENU">Add To Cart</button>
+                            </span>
+                            <!-- 3 -->
+                            <span class="card1">
+                                <div class="menuImgDIV"><img src="images/menu3.jpg" class="menuImg" height="70px"
+                                        width="70px" alt=""></div>
+                                <br>
+                                <h3>Frapachino</h3>
+                                <p>$10.99</p>
+                                <button class="btn btnMENU">Add To Cart</button>
+                            </span>
+                        </div>
+
+                        <!-- line2 -->
+                        <div class="line1 ">
+                            <span class="card1">
+                                <div class="menuImgDIV"><img src="images/menu4.jpg" class="menuImg" height="70px"
+                                        width="70px" alt=""></div>
+                                <br>
+                                <h3>Frapachino</h3>
+                                <p>$10.99</p>
+                                <button class="btn btnMENU">Add To Cart</button>
+                            </span>
+                            <!-- 2 -->
+                            <span class="card1">
+                                <div class="menuImgDIV"><img src="images/menu5.jpg" class="menuImg" height="70px"
+                                        width="70px" alt=""></div>
+                                <br>
+                                <h3>Frapachino</h3>
+                                <p>$10.99</p>
+                                <button class="btn btnMENU">Add To Cart</button>
+                            </span>
+                            <!-- 3 -->
+                            <span class="card1">
+                                <div class="menuImgDIV"><img src="images/menu6.jpg" class="menuImg" height="70px"
+                                        width="70px" alt=""></div>
+                                <br>
+                                <h3>Frapachino</h3>
+                                <p>$10.99</p>
+                                <button class="btn btnMENU">Add To Cart</button>
+                            </span>
+                        </div>
+                        <button class="Btn seeMoreBtnz" id="seeMoreINmENU" style="text-align: center;" onclick="moreMenu()">See
+                            More</button>
+                        <div class="readMeun" id="seeMoreMenu">
+                            <div class="line1 ">
+                                <span class="card1">
+                                    <div class="menuImgDIV"><img src="images/menu1.jpg" class="menuImg" height="70px"
+                                            width="70px" alt=""></div>
+                                    <br>
+                                    <h3>Frapachino</h3>
+                                    <p>$10.99</p>
+                                    <button class="btn btnMENU">Add To Cart</button>
+                                </span>
+                                <!-- 2 -->
+                                <span class="card1">
+                                    <div class="menuImgDIV"><img src="images/menu1.jpg" class="menuImg" height="70px"
+                                            width="70px" alt=""></div>
+                                    <br>
+                                    <h3>Frapachino</h3>
+                                    <p>$10.99</p>
+                                    <button class="btn btnMENU">Add To Cart</button>
+                                </span>
+                                <!-- 3 -->
+                                <span class="card1">
+                                    <div class="menuImgDIV"><img src="images/menu1.jpg" class="menuImg" height="70px"
+                                            width="70px" alt=""></div>
+                                    <br>
+                                    <h3>Frapachino</h3>
+                                    <p>$10.99</p>
+                                    <button class="btn btnMENU">Add To Cart</button>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- menu end -->
+
+                    <div class="products" id="Products" style="background-color: black;"><br><br>
+                        <h1 class="pt-5 mb-5 mt-5" style="text-align: center;"><b
+                                style="border-left:18px solid #67461b; padding: 16px;">LATEST PRODUCTS </b></h1>
+
+                        <div class="productONE">
+                            <span class="product1">
+
+                                <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                                <i class="fa fa-search i " aria-hidden="true"></i>
+                                <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                                <img src="images/product1.jpg" class="product1IMG">
+                                <div class="productText">
+                                    <h6>FRESH COFFEE</h6>
+                                    <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                    <p class="productPrice"> $26.00</p>
+
+                                </div>
+
+                            </span>
+                            <!-- 2 -->
+                            <span class="product1">
+
+                                <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                                <i class="fa fa-search i " aria-hidden="true"></i>
+                                <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                                <img src="images/product2" class="product1IMG">
+                                <div class="productText">
+                                    <h6>FRESH COFFEE</h6>
+                                    <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                    <p class="productPrice"> $26.00</p>
+
+                                </div>
+
+
+                            </span>
+                            <!-- 3 -->
+                            <span class="product1">
+
+                                <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                                <i class="fa fa-search i " aria-hidden="true"></i>
+                                <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                                <img src="images/product3.jpg" class="product1IMG">
+                                <div class="productText">
+                                    <h6>FRESH COFFEE</h6>
+                                    <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                        class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                    <p class="productPrice"> $26.00</p>
+
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="productONE">
+                        <span class="product1">
+
+                            <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                            <i class="fa fa-search i " aria-hidden="true"></i>
+                            <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                            <img src="images/product4.jpg" class="product1IMG">
+                            <div class="productText">
+                                <h6>FRESH COFFEE</h6>
+                                <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                <p class="productPrice"> $26.00</p>
+
+                            </div>
+
+                        </span>
+                        <!-- 2 -->
+                        <span class="product1">
+
+                            <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                            <i class="fa fa-search i " aria-hidden="true"></i>
+                            <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                            <img src="images/product5.jpg" class="product1IMG">
+                            <div class="productText">
+                                <h6>FRESH COFFEE</h6>
+                                <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                <p class="productPrice"> $26.00</p>
+
+                            </div>
+                        </span>
+                        <!-- 3 -->
+                        <span class="product1">
+
+                            <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                            <i class="fa fa-search i " aria-hidden="true"></i>
+                            <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                            <img src="images/product6.webp" class="product1IMG">
+                            <div class="productText">
+                                <h6>FRESH COFFEE</h6>
+                                <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                <p class="productPrice"> $26.00</p>
+
+                            </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="productONE">
+                    <span class="product1">
+
+                        <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                        <i class="fa fa-search i " aria-hidden="true"></i>
+                        <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                        <img src="images/product7.webp" class="product1IMG">
+                        <div class="productText">
+                            <h6>FRESH COFFEE</h6>
+                            <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i class="fa fa-star "
+                                style="color: gold;" aria-hidden="true"></i><i class="fa fa-star " style="color: gold;"
+                                aria-hidden="true"></i><i class="fa fa-star " style="color: gold;"
+                                aria-hidden="true"></i>
+                            <p class="productPrice"> $26.00</p>
+
+                        </div>
+
+                    </span>
+                    <!-- 2 -->
+                    <span class="product1">
+
+                        <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                        <i class="fa fa-search i " aria-hidden="true"></i>
+                        <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                        <img src="images/product8.webp" class="product1IMG">
+                        <div class="productText">
+                            <h6>FRESH COFFEE</h6>
+                            <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i class="fa fa-star "
+                                style="color: gold;" aria-hidden="true"></i><i class="fa fa-star " style="color: gold;"
+                                aria-hidden="true"></i><i class="fa fa-star " style="color: gold;"
+                                aria-hidden="true"></i>
+                            <p class="productPrice"> $26.00</p>
+
+                        </div>
+
+
+                    </span>
+                    <!-- 3 -->
+                    <span class="product1">
+
+                        <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                        <i class="fa fa-search i " aria-hidden="true"></i>
+                        <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                        <img src="images/product9.jpg" class="product1IMG">
+                        <div class="productText">
+                            <h6>FRESH COFFEE</h6>
+                            <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i class="fa fa-star "
+                                style="color: gold;" aria-hidden="true"></i><i class="fa fa-star " style="color: gold;"
+                                aria-hidden="true"></i><i class="fa fa-star " style="color: gold;"
+                                aria-hidden="true"></i>
+                            <p class="productPrice"> $26.00</p>
+
+                        </div>
+                    </span>
+                </div>
+                <button class="Btn seeMoreBtnz" onclick="seeMoreProducts()" style="text-align: center;">See
+                    More</button>
+                <div id="seeMoreProducts">
+                    <div class="productONE">
+                        <span class="product1">
+
+                            <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                            <i class="fa fa-search i " aria-hidden="true"></i>
+                            <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                            <img src="images/product2" class="product1IMG">
+                            <div class="productText">
+                                <h6>FRESH COFFEE</h6>
+                                <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                <p class="productPrice"> $26.00</p>
+
+                            </div>
+
+                        </span>
+                        <!-- 2 -->
+                        <span class="product1">
+
+                            <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                            <i class="fa fa-search i " aria-hidden="true"></i>
+                            <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                            <img src="images/product1.jpg" class="product1IMG">
+                            <div class="productText">
+                                <h6>FRESH COFFEE</h6>
+                                <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                <p class="productPrice"> $26.00</p>
+
+                            </div>
+
+
+                        </span>
+                        <!-- 3 -->
+                        <span class="product1">
+
+                            <i class="fa fa-shopping-cart i  i1" aria-hidden="true"></i>
+                            <i class="fa fa-search i " aria-hidden="true"></i>
+                            <i class="fa fa-heart i" aria-hidden="true"></i>
+
+                            <img src="images/product6.webp" class="product1IMG">
+                            <div class="productText">
+                                <h6>FRESH COFFEE</h6>
+                                <i class="fa fa-star ms-3 " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i><i
+                                    class="fa fa-star " style="color: gold;" aria-hidden="true"></i>
+                                <p class="productPrice"> $26.00</p>
+
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- products end -->
+
+            <!-- review start -->
+            <div class="review" id="Review" style="background-color: black;">
+                <h1 class="pt-5 mt-5 mb-5" style="text-align: center; "> <b
+                        style="border-left:18px solid #67461b; padding: 16px;">CUSTOMER'S REVIEW</b></h1>
+                <div class="reviewMAIN">
+                    <span class="review1">
+                        <i class="fa fa-heart i2" style="font-size: 3em; font-weight: bolder;  color: red;"></i>
+                        <p class="p-3">Lorem ipsum, dolor sit amet consectetur similique animi, voluptas nam temporibus
+                            expedita suscipit dolor totam repellat fugiat omnis, doloremque molestiae veritatis autem
+                            recusandae, commodi libero provident!</p>
+                        <img src="images/review1.jpg" class="reviewIMG" height="70px" width="70px" alt="">
+                    </span>
+                    <!--2  -->
+                    <span class="review1">
+                        <i class="fa fa-heart i2" style="font-size: 3em; font-weight: bolder;  color: red;"></i>
+                        <p class="p-3">Lorem ipsum, dolor sit amet consectetur similique animi, voluptas nam temporibus
+                            expedita suscipit dolor totam repellat fugiat omnis, doloremque molestiae veritatis autem
+                            recusandae, commodi libero provident!</p>
+                        <img src="images/review2.jpg" class="reviewIMG" height="70px" width="70px" alt="">
+                    </span>
+                    <!-- 3 -->
+                    <span class="review1">
+                        <i class="fa fa-heart i2" style="font-size: 3em; font-weight: bolder; color: red;"></i>
+                        <p class="p-3">Lorem ipsum, dolor sit amet consectetur similique animi, voluptas nam temporibus
+                            expedita suscipit dolor totam repellat fugiat omnis, doloremque molestiae veritatis autem
+                            recusandae, commodi libero provident!</p>
+                        <img src="images/review3.webp" class="reviewIMG" height="70px" width="70px" alt="">
+                    </span>
+                </div>
+                <button class="Btn seeMoreBtnz" onclick="moreReviews()" style="text-align: center;">See More</button>
+                <div id="moreReviews">
+                    <div class="reviewMAIN">
+                        <span class="review1">
+                            <i class="fa fa-heart i2" style="font-size: 3em; font-weight: bolder;  color: red;"></i>
+                            <p class="p-3">Lorem ipsum, dolor sit amet consectetur similique animi, voluptas nam
+                                temporibus expedita suscipit dolor totam repellat fugiat omnis, doloremque molestiae
+                                veritatis autem recusandae, commodi libero provident!</p>
+                            <img src="images/review4.webp" class="reviewIMG" height="70px" width="70px" alt="">
+                        </span>
+                        <!--2  -->
+                        <span class="review1">
+                            <i class="fa fa-heart i2" style="font-size: 3em; font-weight: bolder;  color: red;"></i>
+                            <p class="p-3">Lorem ipsum, dolor sit amet consectetur similique animi, voluptas nam
+                                temporibus expedita suscipit dolor totam repellat fugiat omnis, doloremque molestiae
+                                veritatis autem recusandae, commodi libero provident!</p>
+                            <img src="images/review5.jpg" class="reviewIMG" height="70px" width="70px" alt="">
+                        </span>
+                        <!-- 3 -->
+                        <span class="review1">
+                            <i class="fa fa-heart i2" style="font-size: 3em; font-weight: bolder; color: red;"></i>
+                            <p class="p-3">Lorem ipsum, dolor sit amet consectetur similique animi, voluptas nam
+                                temporibus expedita suscipit dolor totam repellat fugiat omnis, doloremque molestiae
+                                veritatis autem recusandae, commodi libero provident!</p>
+                            <img src="images/review1.jpg" class="reviewIMG" height="70px" width="70px" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- review end -->
+
+            <!-- contact start -->
+            <div class="contact" id="Contact" style="background-color: black;">
+                <br><br><br><br>
+                <h1 class="pt-5 mt-5 mb-5" style="text-align: center; "> <b
+                        style="border-left:18px solid #67461b; padding: 16px;">CONTACT US</b></h1>
+
+                <div class="form">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Email</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">YOUR CONCERN</label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">CNIC No.</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">City</label>
+                            <select id="inputState" class="form-select form-control" style="color: #67461b">
+                                <option selected style="color: black;">Karachi</option>
+                                <option style="color: black;">Hyderabad</option>
+                                <option style="color: black;">Faisalabad</option>
+                                <option style="color: black;"> Islamabad</option>
+                                <option style="color: black;">Sukhur</option>
+                                <option style="color: black;">Peshawar</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip Code</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-secondary">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- contact end -->
+            <!-- blogs start -->
+            <div class="blogs" id="Blog">
+                <h1 class="p-3 mt-5" style="text-align: center; "> <b
+                        style="border-left:18px solid #67461b; padding: 16px;"> BLOGS</b></h1>
+                <div class="blogMain">
+                    <div class="blog1">
+                        <div class="blogImg">
+                            <img src="images/blog3.jpg" height="200px" width="100%">
+                        </div>
+                        <div class="blogText p-2">
+                            <h2>Lorem ipsum dolor sit.</h2> <br>
+                            <p>Lorem ipsum, dolor sit amcusandae cumque iure consequuntur provident temporibus ex
+                                molestias, nesciunt error nam nemo sequi tempora modi fuga unde deserunt libero sapiente
+                                id odit! Id, autem dolorem.</p>
+                        </div>
+                        <button class="Btn ms-3" style="text-align: center;">Read More</button>
+
+                    </div>
+                    <!-- 2 -->
+                    <div class="blog1 ">
+                        <div class="blogImg">
+                            <img src="images/blog2.webp" height="200px" width="100%">
+                        </div>
+                        <div class="blogText p-2">
+                            <h2>Lorem ipsum dolor sit.</h2> <br>
+                            <p>Lorem ipat necessitatibus numque iure consequuntur provident temporibus ex molestias,
+                                nesciunt error nam nemo sequi tempora modi fuga unde deserunt libero sapiente id odit!
+                                Id, autem dolorem.</p>
+                        </div>
+                        <button class="Btn ms-3" style="text-align: center;">Read More</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- blogs end -->
+
+            <!--  -->
+        </main>
+
+        <footer>
+            <div class="footer">
+                <i class="fa fa-facebook-f "></i>
+                <i class="fa fa-twitter ps-2"></i>
+                <i class="fa fa-linkedin ps-2"></i>
+                <i class="fa fa-instagram ps-2"></i>
+                <i class="fa fa-pinterest ps-2"></i>
+                <i class="fa fa-snapchat ps-2"></i>
+
+                <h5 class="ps-4"> Created by <i>~Anousha Asadullah</i></h5>
+                <h6 class="ps-5 ms-5 ">All Rights Are Reserved</h6>
+
+            </div>
+
+        </footer>
+
+        <div class="siderbar2"></div>
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+
+    
+
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
